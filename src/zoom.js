@@ -120,4 +120,5 @@ function prepareZoom(e) {
 
 export default function (el) {
   el.addEventListener('click', prepareZoom)
+  return () => el.removeEventListener('click', prepareZoom)
 }

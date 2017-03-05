@@ -12,6 +12,13 @@ And the size of original version is `	5.42 kB` , while this is `3.7K`.
 yarn add zoom-image
 ```
 
+To use in browser, include following JS and CSS in your page, then you can invoke `window.zoom` to setup the image!
+
+```bash
+https://unpkg.com/zoom-image/css/zoom-image.css
+https://unpkg.com/zoom-image/js/zoom-image.js
+```
+
 ## Usage
 
 To use with a bundler like [webpack](https://webpack.js.org):
@@ -23,11 +30,14 @@ import 'zoom-image/css/zoom-image.css'
 zoom(document.querySelector('img'))
 ```
 
-To use in browser, include following JS and CSS in your page, then you can invoke `window.zoom` to setup the image!
+To destroy the listener for the img:
 
-```bash
-https://unpkg.com/zoom-image/css/zoom-image.css
-https://unpkg.com/zoom-image/js/zoom-image.js
+```js
+const destroyZoom = zoom(document.querySelector('img'))
+
+// when you no long need it
+// eg: in a SPA component, call:
+destroyZoom()
 ```
 
 ## Contributing
