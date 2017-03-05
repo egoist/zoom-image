@@ -11,6 +11,9 @@ class App extends Component {
     return (
       <div class="app">
         <h1>Just tap the image!</h1>
+        <p>
+          <a href="https://github.com/egoist/zoom-image">egoist/zoom-image</a>
+        </p>
         <img width="200" ref={ img => this.img = img } src="https://ooo.0o0.ooo/2017/02/11/589ecad7083f4.png" />
       </div>
     )
