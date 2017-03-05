@@ -119,6 +119,7 @@ function prepareZoom(e) {
 }
 
 export default function (el) {
+  el.setAttribute('data-action', 'zoom')
   el.addEventListener('click', prepareZoom)
   return () => el.removeEventListener('click', prepareZoom)
 }
