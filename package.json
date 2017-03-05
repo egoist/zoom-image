@@ -15,8 +15,8 @@
   "scripts": {
     "test": "echo 'no tests!' && npm run lint && npm run build",
     "lint": "xo",
-    "dev": "vbuild example/index.js -d",
-    "build:example": "vbuild example/index.js --dist dist-example",
+    "dev": "vbuild -d",
+    "build:example": "vbuild",
     "deploy": "npm run build:example && gh-pages -d dist-example",
     "build": "bili ./src/zoom.js -d js --name zoom-image --format umd --module-name zoom --compress"
   },
@@ -39,5 +39,10 @@
     "ignores": [
       "example/**"
     ]
+  },
+  "vbuild": {
+    "homepage": "/zoom-image/",
+    "entry": "example/index.js",
+    "dist": "dist-example"
   }
 }

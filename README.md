@@ -17,7 +17,7 @@ yarn add zoom-image
 To use with a bundler like [webpack](https://webpack.js.org):
 
 ```js
-import { zoom } from 'zoom-image'
+import zoom from 'zoom-image'
 import 'zoom-image/css/zoom-image.css'
 
 zoom(document.querySelector('img'))
