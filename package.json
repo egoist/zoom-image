@@ -1,6 +1,6 @@
 {
   "name": "zoom-image",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Medium's Image Zoom (no dependencies, IE 10+)",
   "repository": {
     "url": "egoist/zoom-image",
