@@ -35,7 +35,7 @@ To destroy the listener for the img:
 ```js
 const destroyZoom = zoom(document.querySelector('img'))
 
-// when you no long need it
+// when you no longer need it
 // eg: in a SPA component, call:
 destroyZoom()
 ```
