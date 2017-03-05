@@ -1,9 +1,27 @@
-body {
-  font: 300 1em/1.8 PingFang SC,Lantinghei SC,-apple-system,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+ body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.container {
+  margin: 50px;
+  max-width: 700px;
+}
+.container img {
+  width: 100%;
+}
+.container .pull-left {
+  width: 55%;
+  float: left;
+  margin: 20px 20px 20px -80px;
+}
+@media (min-width: 750px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .container {
+    margin: 100px auto;
+  }
 }
 
-
-.app {
-  max-width: 600px;
-  margin: 0 auto;
-}
