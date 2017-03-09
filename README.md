@@ -14,10 +14,9 @@ yarn add zoom-image
 
 To use in browser, include following JS and CSS in your page, then you can invoke `window.zoom` to setup the image!
 
-```bash
-https://unpkg.com/zoom-image/css/zoom-image.css
+https://unpkg.com/zoom-image/css/zoom-image.css<br>
 https://unpkg.com/zoom-image/js/zoom-image.js
-```
+
 
 ## Usage
 
