@@ -13,20 +13,23 @@
     "css"
   ],
   "scripts": {
-    "test": "echo 'no tests!' && npm run lint && npm run build",
+    "test": "echo 'no tests!' && npm run lint && npm run build && npm run build:css",
     "lint": "xo",
     "dev": "vbuild -d",
     "build:example": "vbuild",
     "deploy": "npm run build:example && gh-pages -d dist-example",
-    "build": "bili ./src/zoom.js -d js --name zoom-image --format umd --module-name zoom --compress"
+    "build": "bili ./src/zoom.js -d js --name zoom-image --format umd --module-name zoom --compress",
+    "build:css": "mkdir -p css && postcss src/zoom-image.css > \"css/zoom-image.css\""
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.7.6",
     "babel-preset-preact-app": "^0.1.0",
     "bili": "^0.14.0",
     "eslint-config-rem": "^3.0.0",
     "gh-pages": "^0.12.0",
+    "postcss-cli": "^3.0.0-beta",
     "preact": "^7.2.0",
     "xo": "^0.17.1"
   },
@@ -44,5 +47,15 @@
     "homepage": "/zoom-image/",
     "entry": "example/index.js",
     "dist": "dist-example"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "ie > 9",
+          "last 4 versions"
+        ]
+      }
+    }
   }
 }

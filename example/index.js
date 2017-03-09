@@ -1,6 +1,6 @@
 import { render, Component } from 'preact'
 import zoom from '../src/zoom'
-import '../css/zoom-image.css'
+import '../src/zoom-image.css'
 import './style.css'
 
 import palm from './images/palm.jpg'

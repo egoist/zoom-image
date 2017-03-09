@@ -4,7 +4,7 @@
 
 This is a fork of [nishanths/zoom.js] (https://github.com/nishanths/zoom.js) which is a vanilla js implementation of [fat/zoom.js](https://github.com/fat/zoom.js), I'm making the fork because the original one never works with a bundler and I don't know how to fix it there.
 
-And the size of original version is `	5.42 kB` , while this is `3.7K`.
+And the size of original version is `5.42 kB` , while this is `3.7K`.
 
 ## Install
 
