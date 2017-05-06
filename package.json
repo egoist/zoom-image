@@ -15,8 +15,8 @@
   "scripts": {
     "test": "echo 'no tests!' && npm run lint && npm run build && npm run build:css",
     "lint": "xo",
-    "dev": "vbuild -d",
-    "build:example": "vbuild",
+    "dev": "poi",
+    "build:example": "poi build",
     "deploy": "npm run build:example && gh-pages -d dist-example",
     "build": "bili ./src/zoom.js -d js --name zoom-image --format umd --module-name zoom --compress",
     "build:css": "mkdir -p css && postcss src/zoom-image.css > \"css/zoom-image.css\""
@@ -29,9 +29,9 @@
     "bili": "^0.14.0",
     "eslint-config-rem": "^3.0.0",
     "gh-pages": "^0.12.0",
+    "poi": "^8.0.0-rc.4",
     "postcss-cli": "^3.0.0-beta",
     "preact": "^7.2.0",
-    "vbuild": "^6.23.2",
     "xo": "^0.17.1"
   },
   "xo": {
@@ -44,7 +44,7 @@
       "example/**"
     ]
   },
-  "vbuild": {
+  "poi": {
     "homepage": "/zoom-image/",
     "entry": "example/index.js",
     "dist": "dist-example"
